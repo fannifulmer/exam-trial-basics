@@ -1,7 +1,7 @@
 def count_as(count_number):
     try:
         count_number = open(count_number, 'r')
-        a_counter = count_number.readline()
+        a_counter = count_number.read()
         a_counter = a_counter.lower()
         return a_counter.count('a')
     
