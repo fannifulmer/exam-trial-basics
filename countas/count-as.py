@@ -1,4 +1,4 @@
-def count_as(a_counter):
+def count_as(open):
     count_as = open('afile.txt', 'r')
     a_counter = count_as.read()
 #try:
