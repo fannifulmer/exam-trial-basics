@@ -3,13 +3,11 @@
     # example: [1, 2, 3, 4, 5] should produce [2, 4]
 
 def seconds(list_of_numbers = []):
-    numbers = []
-    for i in range(list_of_numbers):
-        numbers.append(list_of_numbers[i])
-        i += 1
+    for i in range(len(list_of_numbers)+1):
+        if list_of_numbers[i] % 2 == 0:
+            list_of_numbers.remove(list_of_numbers[i])
+            i += 1
             
-    
-
 print(seconds([1, 2, 3, 4, 5])) # should print [2, 4]
 
 '''list_of_numbers = [1, 2, 3, 4, 5]
