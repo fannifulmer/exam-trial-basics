@@ -6,12 +6,12 @@ pirates = [
     {'Name': 'Hook', 'has_wooden_leg': True, 'gold': 20},
 ]
 
-def pirate_counter(pirate):
-    sum_name = ""
+def pirate_counter(pirate = 'Name'):
+    sum_name = ''
     for elements in pirate:
-        if elements['gold'] > 15 and ['has_wooden_leg'] == True:
+        if elements['gold'] > 15 or ['has_wooden_leg'] == True:
             sum_name += elements['Name']
-    return(sum_name)
+    print(sum_name)
     
 pirate_counter(pirates)
 
