@@ -4,14 +4,16 @@
 # It should have a method called `get_volume` that returns the cuboid's volume
 
 class Cuboid(object):
-    def __init__(self, aside = 10, bside = 20, cside = 30):
-        pass
+    def __init__(self, h = 10, w = 20, l = 30):
+        self.h = h 
+        self.w = w 
+        self.l = l
     
     def get_surface(self):
-        pass
+        return(2 * (self.l*self.w + self.w*self.h + self.h*self.l))
     
     def get_volume(self):
-        pass
+        return(self.l * self.w * self.h)
 
 box = Cuboid(10, 20, 30)
 print(box.get_surface()) # should print 2200
