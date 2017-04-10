@@ -1,11 +1,12 @@
-def count_as(count_as):
+def count_as(count_number):
     try:
-        count_as = open('afile.txt', 'r')
-        a_counter = count_as.readline()
+        count_number = open(count_number, 'r')
+        a_counter = count_number.readline()
         a_counter = a_counter.lower()
         return a_counter.count('a')
+    
     except FileNotFoundError:
-        print("0")
+        return 0
 print(count_as("afile.txt")) # should print 28
 print(count_as("not-a-file")) # should print 0
 
