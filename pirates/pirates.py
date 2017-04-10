@@ -11,7 +11,7 @@ def pirate_counter(pirate = 'Name'):
     for elements in pirate:
         if elements['gold'] > 15 and elements['has_wooden_leg'] == True:
             sum_name.append(elements['Name'])
-            return sum_name
+    return sum_name
     
 print(pirate_counter(pirates))
 
