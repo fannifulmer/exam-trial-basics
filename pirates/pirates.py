@@ -6,6 +6,16 @@ pirates = [
     {'Name': 'Hook', 'has_wooden_leg': True, 'gold': 20},
 ]
 
+def pirate_counter(pirate):
+    sum_name = ""
+    for elements in pirate:
+        if elements['gold'] > 15 and ['has_wooden_leg'] == True:
+            sum_name += elements['Name']
+    return(sum_name)
+    
+pirate_counter(pirates)
+
+    
 # Write a function that takes any list that contains pirates as in the example,
 # And returns a list of names containing the pirates that
 # - have wooden leg and
