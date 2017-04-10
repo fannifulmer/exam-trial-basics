@@ -7,13 +7,13 @@ pirates = [
 ]
 
 def pirate_counter(pirate = 'Name'):
-    sum_name = ''
+    sum_name = []
     for elements in pirate:
-        if elements['gold'] > 15 or ['has_wooden_leg'] == True:
-            sum_name += elements['Name']
-    print(sum_name)
+        if elements['gold'] > 15 and elements['has_wooden_leg'] == True:
+            sum_name.append(elements['Name'])
+            return sum_name
     
-pirate_counter(pirates)
+print(pirate_counter(pirates))
 
     
 # Write a function that takes any list that contains pirates as in the example,
